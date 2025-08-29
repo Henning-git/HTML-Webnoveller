@@ -1,0 +1,29 @@
+
+.titles {
+    color:red;
+    background-color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    /* Styling */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+}
