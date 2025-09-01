@@ -30,8 +30,8 @@ body {
     padding: 20px;
     
 
-    height: 1650px;
-    width: 950px;
+    height: 900px;
+    width: 500px;
     margin: 100px auto;
     overflow-wrap: anywhere;
 
@@ -40,9 +40,68 @@ body {
 
 }
 
+/*Portrait frames*/
+.portrait {
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 500px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(160, 55, 69, 0.65);
+
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/*Individual portrait image adjustments*/
+.portrait.sunny img { 
+    width: 400px;
+    height: auto;
+    object-position: -125px -50px;
+}
+
+.portrait.nephis img {
+    width: 400px;
+    height: auto;
+    object-position: -80px -10px;
+}
+
+.portrait.cassie img {
+    width: 400px;
+    height: auto;
+    object-position: -77px -100px;
+}
+
+/*And portrait image shadows*/
+.portrait.sunny {
+    box-shadow: 0 10px 30px rgb(61, 61, 61, 1);
+}
+
+.portrait.nephis {
+    box-shadow: 0 10px 30px rgba(136, 45, 109, 0.8);
+}
+
+.portrait.cassie {
+    box-shadow: 0 10px 30px rgb(34, 30, 143, 0.8);
+}
+
+
+/*Cards for the columns */
+.cards {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 0 16px;
+    justify-content: center;
+}
+
 .headh3 {
     font-size: 40px; 
     font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 10px;
 }
 
 .paragraph {
