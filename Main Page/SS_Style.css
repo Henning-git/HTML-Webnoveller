@@ -4,6 +4,14 @@ body {
     color: white;
 }
 
+.author {
+    text-align: center;
+    margin-top: -65px;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fade-in 1500ms ease-out 1500ms forwards;
+}
+
 .imagebox {
     border-radius: 20px;
     max-width: 1500px;
@@ -147,6 +155,8 @@ body {
     /*Steps = number of characters*/
     animation: typing 2s steps(12) forwards, blink 1s step-end infinite;
 }
+
+
 
 @keyframes typing {  
     from {
