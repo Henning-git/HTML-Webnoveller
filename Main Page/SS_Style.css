@@ -9,7 +9,7 @@ body {
     margin-top: -65px;
     margin-bottom: 50px;
     opacity: 0;
-    animation: fade-in 1500ms ease-out 1500ms forwards;
+    animation: fade-in 1750ms ease-out 1500ms forwards;
 }
 
 .imagebox {
