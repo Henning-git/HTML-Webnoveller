@@ -1,0 +1,107 @@
+
+body {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.imagebox {
+    border-radius: 20px;
+    max-width: 1500px;
+    height: 650px;
+    margin: 20px auto;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagebox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 75%; /* move crop upward */
+  display: block;
+}
+
+.infobox {
+    display:block;
+    justify-content: center;
+    padding: 20px;
+    
+
+    height: 1650px;
+    width: 950px;
+    margin: 100px auto;
+    overflow-wrap: anywhere;
+
+    border-radius: 20px;
+    background-color: rgba(17, 17, 17, 1);
+
+}
+
+.headh3 {
+    font-size: 40px; 
+    font-family:'Times New Roman', Times, serif;
+}
+
+.paragraph {
+    font-family:'Courier New', Courier, monospace; 
+    font-size: 20px;
+}
+
+/*Fade in effect for image from here*/
+.fade-in {
+    opacity: 0;
+    animation: fade-in 800ms ease-out 150ms forwards;
+}
+
+@keyframes fade-in {
+    to {opacity: 1;}
+}
+
+/*Fade in effect for shadow here*/
+.imagebox {
+    box-shadow: 0 10px 30px rgba(160, 55, 69, 0);
+    animation: shadow 1s ease-out 350ms forwards;
+}
+
+@keyframes shadow {
+    to {box-shadow: 0 10px 30px rgba(160, 55, 69, 0.65);}
+}
+
+/*Typewriter effect from down here*/
+.typewriter {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter h1{
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    overflow: hidden;
+    /*Keeps it on a single line*/
+    white-space: nowrap;
+    /*Cursor style*/
+    border-right: 1px solid;
+    /*Steps = number of characters*/
+    animation: typing 2s steps(12) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {  
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
