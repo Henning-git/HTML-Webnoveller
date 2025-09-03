@@ -1,0 +1,43 @@
+/*Body & Background. Card color = #181818 */
+body {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+}
+
+.header {
+    font-size: 100px; 
+    font-family:monospace; 
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h2.header {
+    font-size: 30px; 
+    font-family: monospace; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.landscapebox {
+    width: 90vw;
+    height: 20vw;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    border-radius: 35px;
+
+    display: inline-flex;   /* acts like inline-block + flexbox inside */
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    overflow:hidden
+}
+
+.landscapeimg {
+    width: 90vw;
+    height: 20vw;
+    object-fit: cover;
+    display: block;
+    object-position: 100% 50%;
+    
+}
