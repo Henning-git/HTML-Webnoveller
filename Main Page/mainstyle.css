@@ -26,7 +26,7 @@ h2.header {
     box-shadow: 0 5px 15px rgb(117, 47, 149);
     border-radius: 35px;
 
-    display: inline-flex;   /* acts like inline-block + flexbox inside */
+    display: inline-flex;  
     align-items: center;
     justify-content: center;
     margin-top: 25px;
@@ -92,7 +92,20 @@ h2.header {
 
 .review p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.review h2 {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.review h1 {
+    font-size: 50px;
+    margin-bottom: 1px;
+    margin-top: 10px;
 }
 
 .review_img {
@@ -113,8 +126,8 @@ h2.header {
 
 .review_img img {
    width: 160%;
-   height: 160%;;
-   object-fit: cover; /* or 'contain' if you prefer letterboxing */
+   height: 160%;
+   object-fit: cover;
    display: block;
    object-position: 0 2vw;
 }
@@ -127,3 +140,10 @@ h2.header {
     flex-direction: row;
     margin-bottom: 50px;
 }
+
+/*Shadow Slave adjustments*/
+#landscapeimgSS {object-position: 0 85%;}
+#landscapeboxSS { box-shadow: 1px 5px 7px rgb(155, 146, 146); }
+#review_imgSS img { object-position: 0 -20px;}
+#review_imgSS { box-shadow: 1px 5px 7px rgb(155, 146, 146); }
+#review_boxSS { box-shadow: 1px 5px 7px rgb(155, 146, 146); }
