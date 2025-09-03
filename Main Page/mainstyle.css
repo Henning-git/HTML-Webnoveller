@@ -2,7 +2,7 @@
 body {
     background-color: #111111;
     color: white;
-    text-align: center;
+
 }
 
 .header {
@@ -21,9 +21,9 @@ h2.header {
 }
 
 .landscapebox {
-    width: 90vw;
+    width: 65vw;
     height: 20vw;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 5px 15px rgb(117, 47, 149);
     border-radius: 35px;
 
     display: inline-flex;   /* acts like inline-block + flexbox inside */
@@ -34,10 +34,96 @@ h2.header {
 }
 
 .landscapeimg {
-    width: 90vw;
+    width: 80vw;
     height: 20vw;
     object-fit: cover;
     display: block;
     object-position: 100% 50%;
     
+}
+
+.logobox {
+    width: 22.5vw;
+    height: auto;
+    border-radius: 150px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.tbatelogo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.tbateline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.stars {
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.review_box {
+    max-width: 70vw;
+    max-height: 20vw;
+    width: 75vw;
+    height: 20vw;
+    overflow: hidden;
+    padding: 10px;
+
+    display: flex;
+    margin-right: 35px;
+    background-color: #181818;
+    border-radius: 35px;
+    box-shadow: 1px 5px 7px rgba(117, 47, 149, 0.641);
+}
+
+.review p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+.review_img {
+    width: 20vw;
+    height: 20vw;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 35px;
+    box-shadow: 1px 5px 7px rgba(117, 47, 149, 0.641);
+    
+
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review_img img {
+   width: 160%;
+   height: 160%;;
+   object-fit: cover; /* or 'contain' if you prefer letterboxing */
+   display: block;
+   object-position: 0 2vw;
+}
+
+.review_line {
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-direction: row;
+    margin-bottom: 50px;
 }
