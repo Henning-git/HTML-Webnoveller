@@ -1,8 +1,16 @@
-
+/*Universal style*/
 body {
     background-color: #111111;
     color: white;
 }
+
+h1 {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    text-align: center;
+}
+
 
 .author {
     text-align: center;
@@ -103,6 +111,7 @@ body {
     gap: 50px;
     padding: 0 16px;
     justify-content: center;
+    margin-bottom: 1px;
 }
 
 .headh3 {
@@ -115,6 +124,109 @@ body {
 .paragraph {
     font-family:'Courier New', Courier, monospace; 
     font-size: 20px;
+}
+
+/*ASPECT SECTION*/
+.background-container {
+    width: 95%;
+    height: 700px;
+    max-height: 700px;
+    margin: 40px auto;
+
+    border-radius: 50px;
+
+    background-image: url("Images/soul_sea.jpg");
+    background-position: 47% 20%;
+
+}
+
+.container-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container-img {
+    width: 67%;
+    height: 530px;
+    justify-content: left;
+    margin-left: 2%;
+
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
+
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 75%; /* move crop upward */
+    display: block;
+}
+
+.container-info {
+    width: 25%;
+    max-width: 25%;
+    height: 660px;
+    max-height: 660px;
+    display: flex;
+    align-self: right;
+
+    /*Position adjustments*/
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    border-top: 1px solid rgba(255,255,255, 0.4);
+    border-left: 1px solid rgba(255,255,255, 0.3);
+    border-radius: 50px;
+
+    background-color: rgba(0, 0, 0, 0.144);
+    backdrop-filter: blur(8px);
+
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: wrap;
+
+}
+
+.info-content hr {
+    width: 100%;              /* strekk hele bredden av boksen */
+    border: none;             /* fjern default kant */
+    border-top: 2px solid rgba(255,255,255,0.4); /* lag din egen linje */
+    margin: 5px 0 10px 0;    /* litt luft rundt */
+}
+
+
+.info-title {
+    font-size: 60px; 
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.info-text {
+    font-size: 25px;
+    line-height: 0.7;
+    text-align: left;
+
+    /* Viktige wrap-regler */
+    word-wrap: break-word;      /* gammelt navn */
+    overflow-wrap: break-word;  /* moderne standard */
+    hyphens: auto;              /* valgfritt: setter bindestrek ved lange ord */
 }
 
 /*Fade in effect for image from here*/
